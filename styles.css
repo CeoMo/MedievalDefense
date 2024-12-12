@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background-color: #6b4423; /* Medieval theme background */
+    color: #fff; /* White text color */
+}
+
+#title-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6b4423;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title-screen h1 {
+    font-size: 64px;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px #000;
+}
+
+#title-screen p {
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    text-shadow: 1px 1px #000;
+}
+
+#start-button {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #228b22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 1px 1px #000;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #2ea82e;
+}
+
+#container {
+    display: none; /* Initially hidden, will be shown after start */
+    margin: 0 auto;
+    border: 2px solid #444;
+}
+
+.control-button {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #228b22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-shadow: 1px 1px #000;
+    transition: background-color 0.3s ease;
+    display: none; /* Hidden until game starts */
+}
+
+.control-button:hover {
+    background-color: #2ea82e;
+}
+
+#pause-button {
+    top: 50px;
+}
+
+#reset-button {
+    top: 100px;
+}
